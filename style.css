@@ -547,4 +547,36 @@ footer{
     }
 }
 }
+/* FINAL HEADER FIX */
 
+.header{
+    background:#111827 !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    padding:30px 10px !important;
+}
+
+.logo-box{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:18px !important;
+}
+
+.logo{
+    width:120px !important;
+    height:120px !important;
+    object-fit:contain !important;
+}
+
+.logo-box h2{
+    font-size:32px !important;
+    color:#ff9800 !important;
+    margin:0 !important;
+}
+
+.logo-box p{
+    font-size:16px !important;
+    margin-top:5px !important;
+}
