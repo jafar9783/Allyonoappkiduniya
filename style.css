@@ -64,13 +64,13 @@ button{
 .logo-box{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:10px;
 }
 /* WEBSITE LOGO */
 
 .logo{
-    width:90px !important;
-    height:90px !important;
+    width:100px !important;
+    height:100px !important;
     object-fit:contain;
     border-radius:50%;
     background:#fff;
