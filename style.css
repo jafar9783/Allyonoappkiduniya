@@ -55,22 +55,17 @@ button{
 .header{
     background:#111827;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     padding:20px;
     border-bottom:2px solid #ff9800;
-    gap:15px;
-    flex-wrap:wrap;
 }
 
 .logo-box{
     display:flex;
     align-items:center;
-    gap:20px;
-    width:100%;
-    justify-content:center;
+    gap:15px;
 }
-
 /* WEBSITE LOGO */
 
 .logo{
