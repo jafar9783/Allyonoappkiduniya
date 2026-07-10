@@ -104,7 +104,7 @@ async function loadGames() {
 
             card.innerHTML = `
 
-                <img src="${game.image}"
+                <img src="images/${game.image}"
                 alt="${game.name}"
                 onerror="this.src='images/logo.png'">
 
