@@ -508,35 +508,61 @@ footer{
     background:#1a1a1a;
 }
 /* Floating Download Button */
-.floating-download{
+..floating-download{
     position: fixed;
-    bottom: 20px;
     left: 50%;
+    bottom: 75px;
     transform: translateX(-50%);
-    background: linear-gradient(90deg,#ff7a00,#ffb000);
-    color: #fff;
-    text-decoration: none;
-    padding: 14px 28px;
-    border-radius: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 8px 20px rgba(255,122,0,.4);
-    z-index: 9999;
-    animation: floatBtn 1.8s ease-in-out infinite;
+    width: 94%;
+    max-width: 430px;
+    padding: 17px 20px;
+    background: linear-gradient(90deg,#0066ff,#00b7ff,#0066ff);
+    background-size: 200% 100%;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+    border-radius:50px;
+    box-shadow:0 8px 25px rgba(0,102,255,.55);
+    z-index:999999;
+    animation:
+        floatMove .55s ease-in-out infinite,
+        glow 1.5s linear infinite,
+        shine 2s linear infinite;
 }
 
-@keyframes floatBtn{
-    0%{
-        transform: translateX(-50%) translateY(0);
+.floating-download::before{
+    content:"⬇ ";
+}
+
+.floating-download::after{
+    content:" ⬇";
+}
+
+@keyframes floatMove{
+    0%,100%{
+        transform:translateX(-50%) translateY(0);
     }
     50%{
-        transform: translateX(-50%) translateY(-8px);
-    }
-    100%{
-        transform: translateX(-50%) translateY(0);
+        transform:translateX(-50%) translateY(-14px);
     }
 }
 
-.floating-download:hover{
-    transform: translateX(-50%) scale(1.05);
+@keyframes glow{
+    0%,100%{
+        box-shadow:0 8px 20px rgba(0,102,255,.5);
+    }
+    50%{
+        box-shadow:0 8px 35px rgba(0,183,255,.9);
+    }
+}
+
+@keyframes shine{
+    0%{
+        background-position:0% 0;
+    }
+    100%{
+        background-position:200% 0;
+    }
 }
