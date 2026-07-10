@@ -53,42 +53,41 @@ button{
 ========================================= */
 
 .header{
-    background:#111827;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-    border-bottom:2px solid #ff9800;
+background:#111827;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:25px 15px;
+border-bottom:2px solid #ff9800;
 }
 
 .logo-box{
-    display:flex;
-    align-items:center;
-    gap:10px;
+display:flex;
+align-items:center;
+gap:15px;
 }
-/* WEBSITE LOGO */
 
 .logo{
-    width:100px !important;
-    height:100px !important;
-    object-fit:contain;
-    border-radius:50%;
-    background:#fff;
-    padding:4px;
+width:120px !important;
+height:120px !important;
+border-radius:50%;
+object-fit:contain;
 }
 
 .logo-box h2{
-    font-size:28px;
-    color:#ff9800;
-    font-weight:700;
-    margin:0;
+font-size:32px;
+color:#ff9800;
+font-weight:800;
+margin:0;
 }
 
 .logo-box p{
-    font-size:13px;
-    color:#cccccc;
+font-size:16px;
+color:#ccc;
+margin:5px 0 0;
 }
 
+color
 /* =========================================
    HEADER BUTTONS
 ========================================= */
