@@ -1,0 +1,509 @@
+/* =========================================
+   RESET
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:#fff;
+}
+
+button{
+    font-family:'Poppins',sans-serif;
+    cursor:pointer;
+    border:none;
+}
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.top-bar{
+    background:#ff9800;
+    color:#000;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header{
+    background:#111827;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    border-bottom:2px solid #ff9800;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* WEBSITE LOGO */
+
+.logo{
+    width:60px !important;
+    height:60px !important;
+    min-width:60px;
+    min-height:60px;
+    max-width:60px;
+    max-height:60px;
+    object-fit:contain;
+    border-radius:50%;
+    background:#fff;
+    padding:4px;
+}
+
+.logo-box h2{
+    font-size:24px;
+    color:#ff9800;
+    font-weight:700;
+}
+
+.logo-box p{
+    font-size:13px;
+    color:#cccccc;
+}
+
+/* =========================================
+   HEADER BUTTONS
+========================================= */
+
+.header-buttons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.telegram-btn,
+.admin-btn{
+    padding:10px 18px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.telegram-btn{
+    background:#229ED9;
+}
+
+.telegram-btn:hover{
+    background:#1580b8;
+}
+
+}
+
+/* =========================================
+   SEARCH BAR
+========================================= */
+
+.search-box{
+    padding:15px;
+}
+
+.search-box input{
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+    border:2px solid #2b2b2b;
+    outline:none;
+    font-size:16px;
+    font-family:'Poppins',sans-serif;
+}
+
+.search-box input:focus{
+    border-color:#ff9800;
+}
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.slider{
+    width:100%;
+    padding:15px;
+}
+
+.slide{
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slide img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* =========================================
+   LIVE VISITOR
+========================================= */
+
+.live-box{
+    background:#1e293b;
+    color:#FFD700;
+    margin:15px;
+    padding:12px;
+    text-align:center;
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.title{
+    text-align:center;
+    color:#FFD700;
+    font-size:28px;
+    margin-top:20px;
+}
+
+#gameCount{
+    text-align:center;
+    color:#ccc;
+    margin-bottom:15px;
+}
+/* =========================================
+   GAMES GRID
+========================================= */
+
+.games{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+    padding:15px;
+}
+
+/* =========================================
+   GAME CARD
+========================================= */
+
+.game-card{
+    background:#1e293b;
+    border:2px solid #2b2b2b;
+    border-radius:18px;
+    padding:15px;
+    text-align:center;
+    transition:.35s;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    box-shadow:0 8px 18px rgba(0,0,0,.35);
+    overflow:hidden;
+}
+
+.game-card:hover{
+    transform:translateY(-5px);
+    border-color:#FFD700;
+    box-shadow:0 10px 22px rgba(255,215,0,.35);
+}
+
+/* =========================================
+   GAME LOGO
+========================================= */
+
+.game-card img{
+    width:80px;
+    height:80px;
+    min-width:80px;
+    min-height:80px;
+    max-width:80px;
+    max-height:80px;
+    object-fit:contain;
+    margin:0 auto 12px;
+    border-radius:18px;
+    background:#ffffff;
+    padding:6px;
+}
+
+/* =========================================
+   GAME NAME
+========================================= */
+
+.game-card h3{
+    font-size:17px;
+    font-weight:700;
+    color:#FFD700;
+    margin-bottom:8px;
+}
+
+/* =========================================
+   RATING
+========================================= */
+
+.rating{
+    font-size:18px;
+    margin-bottom:12px;
+}
+
+/* =========================================
+   INSTALL BUTTON
+========================================= */
+
+.install-btn{
+    display:block;
+    width:100%;
+    background:linear-gradient(135deg,#ff9800,#ff5722);
+    color:#fff;
+    padding:12px;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.install-btn:hover{
+    background:linear-gradient(135deg,#ffb300,#ff6d00);
+    transform:scale(1.03);
+}
+
+/* =========================================
+   FLOATING TELEGRAM
+========================================= */
+
+.floating-telegram{
+    position:fixed;
+    right:15px;
+    bottom:95px;
+    background:#229ED9;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:50px;
+    font-weight:700;
+    box-shadow:0 5px 18px rgba(34,158,217,.45);
+    z-index:999;
+}
+
+/* =========================================
+   WINNER POPUP
+========================================= */
+
+#winner-popup{
+    position:fixed;
+    left:15px;
+    bottom:95px;
+    background:#16a34a;
+    color:#fff;
+    padding:12px 16px;
+    border-radius:12px;
+    display:none;
+    z-index:999;
+    box-shadow:0 5px 18px rgba(0,0,0,.35);
+    font-weight:600;
+}
+/* =========================================
+   FOOTER
+========================================= */
+
+footer{
+    background:#111827;
+    margin-top:30px;
+    padding:30px 20px;
+    text-align:center;
+    border-top:2px solid #ff9800;
+}
+
+.footer-logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#fff;
+    padding:5px;
+}
+
+.footer-content h2{
+    color:#FFD700;
+    margin-bottom:8px;
+    font-size:24px;
+}
+
+.footer-content p{
+    color:#ccc;
+    margin-bottom:15px;
+}
+
+.footer-btn{
+    display:inline-block;
+    background:#229ED9;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:12px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.footer-btn:hover{
+    background:#1580b8;
+}
+
+.copyright{
+    margin-top:20px;
+    font-size:14px;
+    color:#888;
+}
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.bottom-nav{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#111827;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:10px 0;
+    border-top:2px solid #ff9800;
+    z-index:9999;
+}
+
+.bottom-nav a{
+    color:#fff;
+    text-align:center;
+    font-size:13px;
+    font-weight:600;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.bottom-nav a.active{
+    color:#FFD700;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media(max-width:768px){
+
+.header{
+    justify-content:center;
+    text-align:center;
+}
+
+.logo-box{
+    justify-content:center;
+}
+
+.logo{
+    width:55px !important;
+    height:55px !important;
+    min-width:55px;
+    min-height:55px;
+    max-width:55px;
+    max-height:55px;
+}
+
+.logo-box h2{
+    font-size:20px;
+}
+
+.logo-box p{
+    font-size:12px;
+}
+
+.header-buttons{
+    width:100%;
+    justify-content:center;
+}
+
+.games{
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.game-card{
+    padding:12px;
+}
+
+.game-card img{
+    width:70px;
+    height:70px;
+    min-width:70px;
+    min-height:70px;
+    max-width:70px;
+    max-height:70px;
+}
+
+.game-card h3{
+    font-size:15px;
+}
+
+.install-btn{
+    font-size:14px;
+    padding:10px;
+}
+
+.slide img{
+    height:150px;
+}
+
+.bottom-nav a{
+    font-size:11px;
+}
+
+footer{
+    padding-bottom:90px;
+}
+
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar{
+    width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff9800;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#1a1a1a;
+}
