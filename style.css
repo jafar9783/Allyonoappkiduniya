@@ -69,12 +69,8 @@ button{
 /* WEBSITE LOGO */
 
 .logo{
-    width:110px !important;
-height:110px !important;
-    min-width:90px;
-    min-height:90px;
-    max-width:90px;
-    max-height:90px;
+    width:90px !important;
+    height:90px !important;
     object-fit:contain;
     border-radius:50%;
     background:#fff;
@@ -82,9 +78,10 @@ height:110px !important;
 }
 
 .logo-box h2{
-    font-size:32px;
+    font-size:28px;
     color:#ff9800;
     font-weight:700;
+    margin:0;
 }
 
 .logo-box p{
